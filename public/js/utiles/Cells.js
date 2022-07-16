@@ -1,6 +1,6 @@
 class Cell {
   isAlive;
-  willDie;
+  willDie = false;
 
   constructor(isAlive = false) {
     this.isAlive = isAlive;
