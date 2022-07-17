@@ -1,5 +1,4 @@
 import Grid from "../utiles/Grid.js";
-import Cell from "../utiles/Cells.js";
 
 describe("Given a constructor Grid function", () => {
   describe("When it's invocated it reveive the values 1,1 for the properties row and column", () => {
