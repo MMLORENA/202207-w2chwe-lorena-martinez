@@ -4,6 +4,7 @@ class Grid {
   rows;
   columns;
   squares;
+  randomStatus;
 
   constructor(rows, columns) {
     this.rows = rows;
@@ -13,9 +14,14 @@ class Grid {
 
   createSquares() {
     const squares = new Array(this.columns).fill(
-      new Array(this.rows).fill(new Cell())
+      new Array(this.rows).fill(new Cell(this.getRandomStatus()))
     );
     return squares;
+  }
+
+  getRandomStatus() {
+    this.randomStatus = Math.random() < 0.5;
+    return this.randomStatus;
   }
 }
 
